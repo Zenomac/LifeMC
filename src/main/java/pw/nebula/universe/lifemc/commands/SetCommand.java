@@ -62,7 +62,7 @@ public class SetCommand extends PluginCommand {
         Player player = target.getPlayer();
         if (plugin.getDataHandler().getLives(target.getUniqueId()) <= 0) {
             if(player != null){
-                Bukkit.broadcastMessage(ChatColor.<Color> + "Message");;
+                bukkit.broadcastMessage(Lang.FINAL_DEATH.getConfigValue());
             }
         }
         return true;
