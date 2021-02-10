@@ -58,6 +58,13 @@ public class SetCommand extends PluginCommand {
             }
         }
 
+        //Broadcast that the player is dead on final death
+        Player player = target.getPlayer();
+        if (plugin.getDataHandler().getLives(target.getUniqueId()) <= 0) {
+            if(player != null){
+                Bukkit.broadcastMessage(ChatColor.<Color> + "Message");;
+            }
+        }
         return true;
     }
 

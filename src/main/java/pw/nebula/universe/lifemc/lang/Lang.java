@@ -106,6 +106,10 @@ public enum Lang {
      * You got a life by killing another player.
      */
     GAINED_LIFE_BY_MURDER("&aYou got a life by killing another player."),
+	/**
+	 * Final death announcement
+	 */
+	FINAL_DEATH("&c%player% has died for the final time!"),
     ;
 
     private final String path;

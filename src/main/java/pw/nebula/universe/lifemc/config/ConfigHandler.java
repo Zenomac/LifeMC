@@ -106,6 +106,11 @@ public class ConfigHandler {
         return mainConfig.getString("Death mode", "spectate");
     }
 
+    public String isFinalLife() {
+        return mainConfig.
+
+    }
+
     public int getLifeCost() {
         return mainConfig.getInt("Life cost", 100);
     }
